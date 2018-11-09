@@ -2,11 +2,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.kNoAPP</groupId>
-	<artifactId>BarcodeActions</artifactId>
+	<groupId>com.kNoAPP.DevShortcuts</groupId>
+	<artifactId>DevShortcuts</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>BarcodeActions</name>
-	<description>Scan a barcode and make something happen!</description>
+	<name>DevShortcuts</name>
+	<description>Helpful coding shortcuts to speed up your development.</description>
 	<!--<properties> <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
 		</properties> -->
 
@@ -31,8 +31,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>BarcodeActions</finalName>
-		<sourceDirectory>src</sourceDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -45,14 +44,16 @@
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>com.kNoAPP.BA.BarcodeActions</mainClass>
-						</manifest>
-					</archive>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>com.kNoAPP.DevShortcuts.DevShortcuts</mainClass>
+						</manifest>
+					</archive>
+					<finalName>DevShortcuts</finalName>
+					<appendAssemblyId>false</appendAssemblyId>
 				</configuration>
 			</plugin>
 		</plugins>

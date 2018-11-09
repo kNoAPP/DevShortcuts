@@ -1,10 +1,19 @@
 [
   {  
     "key": "$<t>",
-    "execute": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "executable": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {  
+    "key": "$<l>",
+    "executable": "C:/Riot Games/League of Legends/LeagueClient.exe"
+  },
+  {  
+    "key": "$out",
+    "shortcut": "System.out.println(\"\");",
+    "fallback": 3
   },
   {  
     "key": "$<exit>",
-    "execute": "exit",
+    "exit": true
   }
 ]
